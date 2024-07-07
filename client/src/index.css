@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: #ffffffcf;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.lable-priority {
+  @apply flex items-center w-180 pl-[5px] pr-[5px] mr-[10px] box-content;
+}
+
+.task-group {
+  @apply w-180 px-[5px] pb-[5px] mr-[10px] box-content;
+}
+
+.task {
+  @apply relative flex pt-2 pr-[10px] pb-[6px] pl-[6px];
+}
+
+.new-task {
+  @apply inline-flex items-center w-full text-[#ffffff48] h-8 pl-[6px] pr-2 leading-tight-ish rounded hover:bg-[#ffffff0e] cursor-pointer transition-colors duration-20 ease-in delay-0;
+}
+
+.add-task-modal {
+  @apply fixed top-0 right-0 bottom-0 w-[648px] transform duration-200 ease-linear;
+}
+
+.detailsIcon-wrapper {
+  @apply flex px-[6px] py-[4px] font-medium fill-[#9b9b9b] select-none opacity-0 group-hover:opacity-100 group-hover:bg-[#252525] transition-opacity ease-in duration-[20] delay-0;
+}
+
+.actions {
+  @apply absolute top-0 left-full h-[391px] w-[265px] text-white bg-[#252525];
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.2) 0px 3px 6px, rgba(15, 15, 15, 0.4) 0px 9px 24px;
+}
+
+.panel-action {
+  @apply py-[6px];
+}
+
+.pane-action {
+  @apply flex items-center min-h-7 text-sm leading-tight-ish;
+}
+
+.search-actions {
+  @apply flex py-[3px] px-[6px] h-7 text-sm rounded bg-[#ffffff0e] cursor-text;
+  box-shadow: rgba(255, 255, 255, 0.075) 0px 0px 0px 1px inset;
+}
+
+.search-actions input {
+  @apply w-full text-[length:inherit] leading-[inherit] border-none bg-transparent;
+}
+
+input::placeholder {
+  color: #707070;
+}
+
+.lable-priority > div {
+  padding: 3px 6px 3px 3px;
+}
